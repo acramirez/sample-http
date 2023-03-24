@@ -3,10 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SuccessComponent } from './shared/success/success.component';
+import { UnauthorizedComponent } from './shared/unauthorized/unauthorized.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SuccessComponent,
+    UnauthorizedComponent
   ],
   imports: [
     BrowserModule,
