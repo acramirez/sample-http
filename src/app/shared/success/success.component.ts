@@ -6,5 +6,36 @@ import { Component } from '@angular/core';
   styleUrls: ['./success.component.scss']
 })
 export class SuccessComponent {
-
+  response = {
+    "id": "id;objectId",
+    "children": [
+      5,
+      {
+        "name": "fullName",
+        "age": "int;0;10"
+      }
+    ],
+    "currentJob": {
+      "title": "Developer",
+      "salary": "mask;"
+    },
+    "jobs": [
+      2,
+      {
+        "title": "random;[\"developer\", \"medic\", \"teacher\", \"CEO\"]",
+        "salary": "money"
+      }
+    ],
+    "maxRunDistance": "float;1;20;1",
+    "cpf": "cpf",
+    "cnpj": "cnpj",
+    "pretendSalary": "money",
+    "age": "int;20;80",
+    "gender": "gender",
+    "firstName": "firstName",
+    "lastName": "lastName",
+    "phone": "maskInt;+55 (83) 9####-####",
+    "address": "address",
+    "hairColor": "color"
+  }
 }
