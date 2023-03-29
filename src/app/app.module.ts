@@ -7,6 +7,7 @@ import { SuccessComponent } from './shared/success/success.component';
 import { UnauthorizedComponent } from './shared/unauthorized/unauthorized.component';
 import { NotFoundComponent } from './shared/not-found/not-found.component';
 import { InternalServerErrorComponent } from './shared/internal-server-error/internal-server-error.component';
+import { AppService } from './app.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { InternalServerErrorComponent } from './shared/internal-server-error/int
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [AppService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

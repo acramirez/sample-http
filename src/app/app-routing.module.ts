@@ -7,10 +7,12 @@ import { InternalServerErrorComponent } from './shared/internal-server-error/int
 import { NotFoundComponent } from './shared/not-found/not-found.component';
 
 const routes: Routes = [
-  { path: 'success', component: SuccessComponent, canActivate: [AuthGuard] },
+  { path: 'success', component: SuccessComponent },
   { path: 'unauthorized', component: UnauthorizedComponent },
   { path: 'internal-server-error', component: InternalServerErrorComponent },
   { path: 'not-found', component: NotFoundComponent },
+  { path: '', pathMatch: 'full', redirectTo: 'unauthorized' },
+  { path: '**', pathMatch: 'full', redirectTo: '' }
 ];
 
 @NgModule({
